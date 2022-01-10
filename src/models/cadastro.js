@@ -1,0 +1,22 @@
+
+
+function validarCPF(cpf){
+    if(cpf.length !== 11){
+      return {valido:false, texto:"CPF deve ter 11 digitos."}
+    }else{
+      return {valido:true, texto:""}
+    }
+  }
+  
+
+
+function validarSenha(senha){
+    if(senha.length < 4 || senha.length > 11){
+      return {valido:false, texto:"Sua senha deve conter entre 4 e 11 digitos."}
+    }else{
+      return {valido:true, texto:""}
+    }
+  }
+  
+
+export { validarCPF, validarSenha };
